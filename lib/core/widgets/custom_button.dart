@@ -1,6 +1,7 @@
-import 'custom_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import 'custom_text.dart';
 
 class CustomButton extends StatelessWidget {
   final bool isLoading;
@@ -10,18 +11,19 @@ class CustomButton extends StatelessWidget {
   final Color? color;
   final IconData? icon;
   final double itemSize;
-  final Function() onPressed;
+  final VoidCallback onPressed;
   final double? borderRadius;
   final bool enableBorderColor;
   final EdgeInsetsGeometry? padding;
+
   const CustomButton({
     super.key,
     this.isLoading = false,
     this.width,
     this.height,
     this.text,
-    this.icon,
     this.color,
+    this.icon,
     this.itemSize = 20,
     required this.onPressed,
     this.borderRadius,
@@ -32,14 +34,14 @@ class CustomButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: width?.sp ?? double.infinity,
+      width: width?.w ?? double.infinity,
       height: (height ?? 55).h,
       child: isLoading
           ? const Center(child: CircularProgressIndicator())
           : _Body(
               text: text,
-              icon: icon,
               color: color,
+              icon: icon,
               itemSize: itemSize,
               onPressed: onPressed,
               borderRadius: borderRadius,
@@ -55,14 +57,15 @@ class _Body extends StatelessWidget {
   final Color? color;
   final IconData? icon;
   final double itemSize;
-  final Function() onPressed;
+  final VoidCallback onPressed;
   final double? borderRadius;
   final bool enableBorderColor;
   final EdgeInsetsGeometry? padding;
+
   const _Body({
     this.text,
-    this.icon,
     this.color,
+    this.icon,
     required this.itemSize,
     required this.onPressed,
     this.borderRadius,
@@ -72,88 +75,51 @@ class _Body extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final colors = theme.colorScheme;
+
+    final backgroundColor = enableBorderColor
+        ? Colors.transparent
+        : (color ??
+              theme.elevatedButtonTheme.style?.backgroundColor?.resolve({}) ??
+              colors.primary);
+
+    final foregroundColor = enableBorderColor
+        ? (color ?? colors.primary)
+        : (theme.elevatedButtonTheme.style?.foregroundColor?.resolve({}) ??
+              colors.onPrimary);
+
     return ElevatedButton(
       onPressed: onPressed,
       style: ElevatedButton.styleFrom(
         elevation: 0,
-        backgroundColor: enableBorderColor
-            ? Theme.of(context).scaffoldBackgroundColor
-            : color ?? Theme.of(context).primaryColor,
-        shape: _shape(context),
-        padding: padding,
+        backgroundColor: backgroundColor,
+        foregroundColor: foregroundColor,
+        padding: padding ?? EdgeInsets.symmetric(horizontal: 0.w),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(borderRadius ?? 12.r),
+          side: BorderSide(
+            color: enableBorderColor
+                ? (color ?? colors.primary)
+                : Colors.transparent,
+          ),
+        ),
       ),
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          if (icon != null)
-            _Icon(
-              icon: icon!,
-              iconSize: (itemSize + 8).sp,
-              color: _itemColor(context),
-            ),
-          if (icon != null) SizedBox(width: 4.w),
-          _Title(
-            text: text ?? "",
-            textSize: itemSize,
-            color: _itemColor(context),
+          CustomText(
+            text: text ?? '',
+            size: itemSize.sp,
+            type: Type.overMedium,
+            color: foregroundColor,
           ),
+          if (icon != null) ...[
+            SizedBox(width: 4.w),
+            Icon(icon, size: (itemSize + 6).sp, color: foregroundColor),
+          ],
         ],
       ),
     );
-  }
-
-  OutlinedBorder _shape(BuildContext context) {
-    return RoundedRectangleBorder(
-      borderRadius: BorderRadius.circular(borderRadius ?? 8.r),
-      side: BorderSide(
-        color: enableBorderColor
-            ? color ?? Theme.of(context).primaryColor
-            : Colors.transparent,
-        width: 1.0,
-      ),
-    );
-  }
-
-  Color _itemColor(BuildContext context) {
-    return enableBorderColor
-        ? color ?? Theme.of(context).primaryColor
-        : Theme.of(context).scaffoldBackgroundColor;
-  }
-}
-
-class _Title extends StatelessWidget {
-  final String text;
-  final double textSize;
-  final Color color;
-  const _Title({
-    required this.text,
-    required this.textSize,
-    required this.color,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return CustomText(
-      text: text,
-      size: textSize.sp,
-      type: Type.overMedium,
-      color: color,
-    );
-  }
-}
-
-class _Icon extends StatelessWidget {
-  final IconData icon;
-  final double iconSize;
-  final Color color;
-  const _Icon({
-    required this.icon,
-    required this.iconSize,
-    required this.color,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Icon(icon, size: iconSize.sp, color: color);
   }
 }

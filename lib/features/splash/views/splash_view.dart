@@ -1,8 +1,9 @@
-
 import '../../../const/aseets.dart';
 import '../widgets/splash_body.dart';
 import 'package:flutter/material.dart';
 import '../../../di/server_locator.dart';
+import '../../../core/utils/nav_to.dart';
+import '../../onBoarding/pages/views/on_boarding_view.dart';
 import '../../settings/presentation/manager/settings_cubit.dart';
 
 class SplashView extends StatefulWidget {
@@ -16,9 +17,15 @@ class _SplashViewState extends State<SplashView> {
   @override
   void initState() {
     super.initState();
+
     Future.delayed(const Duration(seconds: 3), () {
-      if(getIt<SettingsCubit>().state.isFirstTime) {
-        // Navigate to onboarding screen
+      if (!mounted) return;
+
+      if (getIt<SettingsCubit>().state.isFirstTime) {
+        NavTo.pushReplacement(
+          context: context,
+          nextPage: const OnBoardingView(),
+        );
       } else {
         // Navigate to home screen
       }
@@ -37,7 +44,7 @@ class _SplashViewState extends State<SplashView> {
             fit: BoxFit.fill,
           ),
         ),
-        child: Center(child: SplashBody()),
+        child: const Center(child: SplashBody()),
       ),
     );
   }

@@ -37,9 +37,9 @@ class MyApp extends StatelessWidget {
             return MaterialApp(
               title: 'Flutter Demo',
               theme: AppTheme.light,
+              themeMode: state.theme,
               darkTheme: AppTheme.dark,
-              themeMode: ThemeMode.dark,
-              locale: Locale("ar"),
+              locale: Locale(state.lang),
               debugShowCheckedModeBanner: false,
               localizationsDelegates: [
                 S.delegate,

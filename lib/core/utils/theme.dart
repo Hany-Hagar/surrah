@@ -63,9 +63,7 @@ class AppTheme {
     cardTheme: CardThemeData(
       color: Colors.white,
       elevation: 0,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(16),
-      ),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
     ),
 
     floatingActionButtonTheme: const FloatingActionButtonThemeData(
@@ -83,6 +81,16 @@ class AppTheme {
       unselectedLabelStyle: Styles.textStyle400.copyWith(
         color: inactiveGrey,
         fontSize: 12,
+      ),
+    ),
+
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ElevatedButton.styleFrom(
+        elevation: 0,
+        backgroundColor: primary,
+        foregroundColor: Colors.white,
+        minimumSize: const Size(double.infinity, 55),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
       ),
     ),
   );
@@ -130,9 +138,7 @@ class AppTheme {
     cardTheme: CardThemeData(
       color: darkCard,
       elevation: 0,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(16),
-      ),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
     ),
 
     floatingActionButtonTheme: const FloatingActionButtonThemeData(
@@ -150,6 +156,16 @@ class AppTheme {
       unselectedLabelStyle: Styles.textStyle400.copyWith(
         color: inactiveGrey,
         fontSize: 12,
+      ),
+    ),
+
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ElevatedButton.styleFrom(
+        elevation: 0,
+        backgroundColor: secondary,
+        foregroundColor: primary,
+        minimumSize: const Size(double.infinity, 55),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
       ),
     ),
   );
