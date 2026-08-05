@@ -16,6 +16,7 @@ dependencies:
 
   intl: ^0.20.2
   get_it: ^9.2.1
+  flutter_svg: ^2.3.0
   flutter_bloc: ^8.1.0
   path_provider: ^2.1.5
   hydrated_bloc: ^9.0.0
@@ -38,6 +39,7 @@ flutter:
   assets:
     - assets/images/
     - assets/fonts/
+    - assets/svgs/
 
   fonts:
     - family: Cairo
