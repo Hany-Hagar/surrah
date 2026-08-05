@@ -1,6 +1,39 @@
 {
-    "@@locale": "en",
-    
-    "appTitle": "Surrah",
-    "@appTitle": {}
+  "@@locale": "en",
+
+  "appTitle": "Surrah",
+  "@appTitle": {},
+
+  "onboardingTitle1": "Track Every Expense",
+  "@onboardingTitle1": {},
+
+  "onboardingDescription1": "Monitor your income and expenses with ease.",
+  "@onboardingDescription1": {},
+
+  "onboardingTitle2": "Build Better Financial Habits",
+  "@onboardingTitle2": {},
+
+  "onboardingDescription2": "Develop smart financial habits for a more secure future.",
+  "@onboardingDescription2": {},
+
+  "onboardingTitle3": "Reach Your Financial Goals",
+  "@onboardingTitle3": {},
+
+  "onboardingDescription3": "Save consistently and achieve your financial goals.",
+  "@onboardingDescription3": {},
+
+  "onboardingTitle4": "Stay in Control",
+  "@onboardingTitle4": {},
+
+  "onboardingDescription4": "Manage your finances with confidence and make informed decisions.",
+  "@onboardingDescription4": {},
+
+  "next": "Next",
+  "@next": {},
+
+  "getStarted": "Get Started",
+  "@getStarted": {},
+
+  "skip": "Skip",
+  "@skip": {}
 }

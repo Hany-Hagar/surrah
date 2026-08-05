@@ -23,5 +23,30 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
     "appTitle": MessageLookupByLibrary.simpleMessage("صُرّة"),
+    "getStarted": MessageLookupByLibrary.simpleMessage("ابدأ الآن"),
+    "next": MessageLookupByLibrary.simpleMessage("التالي"),
+    "onboardingDescription1": MessageLookupByLibrary.simpleMessage(
+      "تتبّع دخلك ومصروفاتك بسهولة.",
+    ),
+    "onboardingDescription2": MessageLookupByLibrary.simpleMessage(
+      "طوّر عادات مالية تساعدك على إدارة أموالك بذكاء.",
+    ),
+    "onboardingDescription3": MessageLookupByLibrary.simpleMessage(
+      "ادخر بانتظام واقترب من تحقيق أهدافك المالية.",
+    ),
+    "onboardingDescription4": MessageLookupByLibrary.simpleMessage(
+      "تابع نفقاتك واتخذ قرارات مالية بثقة.",
+    ),
+    "onboardingTitle1": MessageLookupByLibrary.simpleMessage("تابع كل ريال"),
+    "onboardingTitle2": MessageLookupByLibrary.simpleMessage(
+      "ابنِ عادات مالية أفضل",
+    ),
+    "onboardingTitle3": MessageLookupByLibrary.simpleMessage(
+      "حقق أهدافك المالية",
+    ),
+    "onboardingTitle4": MessageLookupByLibrary.simpleMessage(
+      "تحكم الكامل بأموالك",
+    ),
+    "skip": MessageLookupByLibrary.simpleMessage("تخطي"),
   };
 }

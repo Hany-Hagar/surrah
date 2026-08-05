@@ -58,6 +58,101 @@ class S {
   String get appTitle {
     return Intl.message('Surrah', name: 'appTitle', desc: '', args: []);
   }
+
+  /// `Track Every Expense`
+  String get onboardingTitle1 {
+    return Intl.message(
+      'Track Every Expense',
+      name: 'onboardingTitle1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Monitor your income and expenses with ease.`
+  String get onboardingDescription1 {
+    return Intl.message(
+      'Monitor your income and expenses with ease.',
+      name: 'onboardingDescription1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Build Better Financial Habits`
+  String get onboardingTitle2 {
+    return Intl.message(
+      'Build Better Financial Habits',
+      name: 'onboardingTitle2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Develop smart financial habits for a more secure future.`
+  String get onboardingDescription2 {
+    return Intl.message(
+      'Develop smart financial habits for a more secure future.',
+      name: 'onboardingDescription2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Reach Your Financial Goals`
+  String get onboardingTitle3 {
+    return Intl.message(
+      'Reach Your Financial Goals',
+      name: 'onboardingTitle3',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Save consistently and achieve your financial goals.`
+  String get onboardingDescription3 {
+    return Intl.message(
+      'Save consistently and achieve your financial goals.',
+      name: 'onboardingDescription3',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Stay in Control`
+  String get onboardingTitle4 {
+    return Intl.message(
+      'Stay in Control',
+      name: 'onboardingTitle4',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Manage your finances with confidence and make informed decisions.`
+  String get onboardingDescription4 {
+    return Intl.message(
+      'Manage your finances with confidence and make informed decisions.',
+      name: 'onboardingDescription4',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Next`
+  String get next {
+    return Intl.message('Next', name: 'next', desc: '', args: []);
+  }
+
+  /// `Get Started`
+  String get getStarted {
+    return Intl.message('Get Started', name: 'getStarted', desc: '', args: []);
+  }
+
+  /// `Skip`
+  String get skip {
+    return Intl.message('Skip', name: 'skip', desc: '', args: []);
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

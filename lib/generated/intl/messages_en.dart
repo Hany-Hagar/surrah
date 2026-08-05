@@ -23,5 +23,30 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
     "appTitle": MessageLookupByLibrary.simpleMessage("Surrah"),
+    "getStarted": MessageLookupByLibrary.simpleMessage("Get Started"),
+    "next": MessageLookupByLibrary.simpleMessage("Next"),
+    "onboardingDescription1": MessageLookupByLibrary.simpleMessage(
+      "Monitor your income and expenses with ease.",
+    ),
+    "onboardingDescription2": MessageLookupByLibrary.simpleMessage(
+      "Develop smart financial habits for a more secure future.",
+    ),
+    "onboardingDescription3": MessageLookupByLibrary.simpleMessage(
+      "Save consistently and achieve your financial goals.",
+    ),
+    "onboardingDescription4": MessageLookupByLibrary.simpleMessage(
+      "Manage your finances with confidence and make informed decisions.",
+    ),
+    "onboardingTitle1": MessageLookupByLibrary.simpleMessage(
+      "Track Every Expense",
+    ),
+    "onboardingTitle2": MessageLookupByLibrary.simpleMessage(
+      "Build Better Financial Habits",
+    ),
+    "onboardingTitle3": MessageLookupByLibrary.simpleMessage(
+      "Reach Your Financial Goals",
+    ),
+    "onboardingTitle4": MessageLookupByLibrary.simpleMessage("Stay in Control"),
+    "skip": MessageLookupByLibrary.simpleMessage("Skip"),
   };
 }

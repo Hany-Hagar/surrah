@@ -1,6 +1,39 @@
 {
-    "@@locale": "ar",
-    
-    "appTitle": "صُرّة",
-    "@appTitle": {}
+  "@@locale": "ar",
+
+  "appTitle": "صُرّة",
+  "@appTitle": {},
+
+  "onboardingTitle1": "تابع كل ريال",
+  "@onboardingTitle1": {},
+
+  "onboardingDescription1": "تتبّع دخلك ومصروفاتك بسهولة.",
+  "@onboardingDescription1": {},
+
+  "onboardingTitle2": "ابنِ عادات مالية أفضل",
+  "@onboardingTitle2": {},
+
+  "onboardingDescription2": "طوّر عادات مالية تساعدك على إدارة أموالك بذكاء.",
+  "@onboardingDescription2": {},
+
+  "onboardingTitle3": "حقق أهدافك المالية",
+  "@onboardingTitle3": {},
+
+  "onboardingDescription3": "ادخر بانتظام واقترب من تحقيق أهدافك المالية.",
+  "@onboardingDescription3": {},
+
+  "onboardingTitle4": "تحكم الكامل بأموالك",
+  "@onboardingTitle4": {},
+
+  "onboardingDescription4": "تابع نفقاتك واتخذ قرارات مالية بثقة.",
+  "@onboardingDescription4": {},
+
+  "next": "التالي",
+  "@next": {},
+
+  "getStarted": "ابدأ الآن",
+  "@getStarted": {},
+
+  "skip": "تخطي",
+  "@skip": {}
 }
