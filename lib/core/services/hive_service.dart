@@ -1,8 +1,10 @@
+import '../../const/hive_data.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
 class HiveService {
   Future<void> init() async {
     await Hive.initFlutter();
+    await Hive.openBox(HiveData.profileBox);
   }
 
   Future<Box<T>> openBox<T>(String boxName) async {

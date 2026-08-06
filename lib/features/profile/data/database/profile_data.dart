@@ -1,12 +1,13 @@
 import '../models/profile_model.dart';
+import '../../../../const/hive_data.dart';
 import '../../../../core/services/hive_service.dart';
 
 class ProfileData {
   final HiveService hiveService;
 
-  const ProfileData(this.hiveService);
+  const ProfileData({required this.hiveService});
 
-  static const boxName = 'profile';
+  static const boxName = HiveData.profileBox;
 
   Future<void> init() async {
     await hiveService.openBox<ProfileModel>(boxName);

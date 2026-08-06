@@ -2,6 +2,7 @@ import 'generated/l10n.dart';
 import 'core/utils/theme.dart';
 import 'di/server_locator.dart';
 import 'package:flutter/material.dart';
+import 'core/services/hive_service.dart';
 import 'core/utils/my_bloc_observer.dart';
 import 'features/splash/views/splash_view.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -19,6 +20,7 @@ Future<void> main() async {
     storageDirectory: await getApplicationDocumentsDirectory(),
   );
   setupLocator();
+  await getIt<HiveService>().init();
   runApp(const MyApp());
 }
 
