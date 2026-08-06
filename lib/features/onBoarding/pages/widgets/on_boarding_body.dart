@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-
-import '../../../../core/utils/icon_broken.dart';
-import '../../../../core/widgets/custom_button.dart';
-import '../../../../core/widgets/custom_text.dart';
 import '../../../../generated/l10n.dart';
+import '../../../../core/utils/nav_to.dart';
 import '../../models/on_boarding_model.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import '../../../setup/views/welcome_view.dart';
+import '../../../../core/utils/icon_broken.dart';
+import '../../../../core/widgets/custom_text.dart';
+import '../../../../core/widgets/custom_button.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class OnBoardingBody extends StatelessWidget {
   final PageController pageController;
@@ -30,11 +31,11 @@ class OnBoardingBody extends StatelessWidget {
             _Skip(pageController: pageController),
             const Spacer(flex: 2),
             SvgPicture.asset(
-              onBoardingModel.imagePath, 
+              onBoardingModel.imagePath,
               fit: BoxFit.fill,
               width: MediaQuery.of(context).size.width * 0.8,
               height: MediaQuery.of(context).size.height * 0.4,
-              ),
+            ),
             const Spacer(flex: 3),
             _Text(onBoardingModel: onBoardingModel),
             const Spacer(flex: 1),
@@ -119,6 +120,10 @@ class _Button extends StatelessWidget {
     return CustomButton(
       onPressed: () {
         if (onBoardingModel.id == onBoardingsData(context: context).length) {
+          NavTo.pushReplacement(
+            context: context,
+            nextPage: const WelcomeView(),
+          );
         } else {
           pageController.nextPage(
             duration: const Duration(milliseconds: 300),

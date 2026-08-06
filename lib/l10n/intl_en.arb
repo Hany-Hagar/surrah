@@ -35,5 +35,29 @@
   "@getStarted": {},
 
   "skip": "Skip",
-  "@skip": {}
+  "@skip": {},
+
+  "setupTitle": "Welcome!",
+  "@setupTitle": {},
+
+  "setupSubtitle": "Let's set up your profile and preferences",
+  "@setupSubtitle": {},
+
+  "personalizeExperience": "Personalize your experience",
+  "@personalizeExperience": {},
+
+  "chooseCurrency": "Choose your currency",
+  "@chooseCurrency": {},
+
+  "pickTheme": "Pick your theme",
+  "@pickTheme": {},
+
+  "selectLanguage": "Select your language",
+  "@selectLanguage": {},
+
+  "enableNotifications": "Enable smart notifications",
+  "@enableNotifications": {},
+
+  "protectData": "Protect your data",
+  "@protectData": {}
 }

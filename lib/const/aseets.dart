@@ -8,4 +8,7 @@ class Assets {
   static String onboarding2 = "assets/svgs/onBoarding2.svg";
   static String onboarding3 = "assets/svgs/onBoarding3.svg";
   static String onboarding4 = "assets/svgs/onBoarding4.svg";
+
+  // Setup
+  static String setup1 = "assets/images/setupLogo.png";
 }

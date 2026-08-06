@@ -23,6 +23,10 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
     "appTitle": MessageLookupByLibrary.simpleMessage("صُرّة"),
+    "chooseCurrency": MessageLookupByLibrary.simpleMessage("اختر عملتك"),
+    "enableNotifications": MessageLookupByLibrary.simpleMessage(
+      "تفعيل الإشعارات الذكية",
+    ),
     "getStarted": MessageLookupByLibrary.simpleMessage("ابدأ الآن"),
     "next": MessageLookupByLibrary.simpleMessage("التالي"),
     "onboardingDescription1": MessageLookupByLibrary.simpleMessage(
@@ -47,6 +51,14 @@ class MessageLookup extends MessageLookupByLibrary {
     "onboardingTitle4": MessageLookupByLibrary.simpleMessage(
       "تحكم الكامل بأموالك",
     ),
+    "personalizeExperience": MessageLookupByLibrary.simpleMessage("خصص تجربتك"),
+    "pickTheme": MessageLookupByLibrary.simpleMessage("اختر موضوعك"),
+    "protectData": MessageLookupByLibrary.simpleMessage("حماية بياناتك"),
+    "selectLanguage": MessageLookupByLibrary.simpleMessage("اختر لغتك"),
+    "setupSubtitle": MessageLookupByLibrary.simpleMessage(
+      "لنقم بإعداد ملفك الشخصي وتفضيلاتك",
+    ),
+    "setupTitle": MessageLookupByLibrary.simpleMessage("مرحباً!"),
     "skip": MessageLookupByLibrary.simpleMessage("تخطي"),
   };
 }

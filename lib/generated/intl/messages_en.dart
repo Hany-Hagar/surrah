@@ -23,6 +23,12 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
     "appTitle": MessageLookupByLibrary.simpleMessage("Surrah"),
+    "chooseCurrency": MessageLookupByLibrary.simpleMessage(
+      "Choose your currency",
+    ),
+    "enableNotifications": MessageLookupByLibrary.simpleMessage(
+      "Enable smart notifications",
+    ),
     "getStarted": MessageLookupByLibrary.simpleMessage("Get Started"),
     "next": MessageLookupByLibrary.simpleMessage("Next"),
     "onboardingDescription1": MessageLookupByLibrary.simpleMessage(
@@ -47,6 +53,18 @@ class MessageLookup extends MessageLookupByLibrary {
       "Reach Your Financial Goals",
     ),
     "onboardingTitle4": MessageLookupByLibrary.simpleMessage("Stay in Control"),
+    "personalizeExperience": MessageLookupByLibrary.simpleMessage(
+      "Personalize your experience",
+    ),
+    "pickTheme": MessageLookupByLibrary.simpleMessage("Pick your theme"),
+    "protectData": MessageLookupByLibrary.simpleMessage("Protect your data"),
+    "selectLanguage": MessageLookupByLibrary.simpleMessage(
+      "Select your language",
+    ),
+    "setupSubtitle": MessageLookupByLibrary.simpleMessage(
+      "Let\'s set up your profile and preferences",
+    ),
+    "setupTitle": MessageLookupByLibrary.simpleMessage("Welcome!"),
     "skip": MessageLookupByLibrary.simpleMessage("Skip"),
   };
 }

@@ -153,6 +153,81 @@ class S {
   String get skip {
     return Intl.message('Skip', name: 'skip', desc: '', args: []);
   }
+
+  /// `Welcome!`
+  String get setupTitle {
+    return Intl.message('Welcome!', name: 'setupTitle', desc: '', args: []);
+  }
+
+  /// `Let's set up your profile and preferences`
+  String get setupSubtitle {
+    return Intl.message(
+      'Let\'s set up your profile and preferences',
+      name: 'setupSubtitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Personalize your experience`
+  String get personalizeExperience {
+    return Intl.message(
+      'Personalize your experience',
+      name: 'personalizeExperience',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Choose your currency`
+  String get chooseCurrency {
+    return Intl.message(
+      'Choose your currency',
+      name: 'chooseCurrency',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Pick your theme`
+  String get pickTheme {
+    return Intl.message(
+      'Pick your theme',
+      name: 'pickTheme',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Select your language`
+  String get selectLanguage {
+    return Intl.message(
+      'Select your language',
+      name: 'selectLanguage',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enable smart notifications`
+  String get enableNotifications {
+    return Intl.message(
+      'Enable smart notifications',
+      name: 'enableNotifications',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Protect your data`
+  String get protectData {
+    return Intl.message(
+      'Protect your data',
+      name: 'protectData',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

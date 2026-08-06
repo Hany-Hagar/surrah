@@ -35,5 +35,29 @@
   "@getStarted": {},
 
   "skip": "تخطي",
-  "@skip": {}
+  "@skip": {},
+
+  "setupTitle": "مرحباً!",
+  "@setupTitle": {},
+
+  "setupSubtitle": "لنقم بإعداد ملفك الشخصي وتفضيلاتك",
+  "@setupSubtitle": {},
+
+  "personalizeExperience": "خصص تجربتك",
+  "@personalizeExperience": {},
+
+  "chooseCurrency": "اختر عملتك",
+  "@chooseCurrency": {},
+
+  "pickTheme": "اختر موضوعك",
+  "@pickTheme": {},
+
+  "selectLanguage": "اختر لغتك",
+  "@selectLanguage": {},
+
+  "enableNotifications": "تفعيل الإشعارات الذكية",
+  "@enableNotifications": {},
+
+  "protectData": "حماية بياناتك",
+  "@protectData": {}
 }
