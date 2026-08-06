@@ -1,10 +1,10 @@
 import '../models/profile_model.dart';
 import '../../../../core/services/hive_service.dart';
 
-class ProfileDatabase {
+class ProfileData {
   final HiveService hiveService;
 
-  const ProfileDatabase(this.hiveService);
+  const ProfileData(this.hiveService);
 
   static const boxName = 'profile';
 
