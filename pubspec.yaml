@@ -14,22 +14,40 @@ dependencies:
   flutter_localizations:
     sdk: flutter
 
+  # Localization
   intl: ^0.20.2
+
+  # State Management & Dependency Injection
   get_it: ^9.2.1
-  flutter_svg: ^2.3.0
   flutter_bloc: ^8.1.0
-  path_provider: ^2.1.5
   hydrated_bloc: ^9.0.0
-  cupertino_icons: ^1.0.8
+
+  # Local Storage
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  path_provider: ^2.1.5
+
+  # UI
+  flutter_svg: ^2.3.0
   flutter_screenutil: ^5.9.3
   smooth_page_indicator: ^2.0.1
+
+  # Icons
+  cupertino_icons: ^1.0.8
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
+  # Development Tools
   rename: ^3.1.0
   flutter_lints: ^6.0.0
+
+  # Code Generation
+  build_runner: ^2.4.13
+  hive_generator: ^2.0.1
+
+  # App Assets
   flutter_native_splash: ^2.4.7
   flutter_launcher_icons: ^0.14.4
 
