@@ -1,4 +1,6 @@
+
 import 'profile_states.dart';
+import 'package:flutter/material.dart';
 import '../../data/repo/profile_repo.dart';
 import '../../data/models/profile_model.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -7,6 +9,7 @@ class ProfileCubit extends Cubit<ProfileStates> {
   final ProfileRepo profileRepo;
 
   ProfileCubit({required this.profileRepo}) : super(ProfileInitialState());
+  static ProfileCubit get(BuildContext context) => BlocProvider.of(context);
 
   ProfileModel profile = ProfileModel.empty();
 

@@ -24,10 +24,18 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
     "appTitle": MessageLookupByLibrary.simpleMessage("صُرّة"),
     "chooseCurrency": MessageLookupByLibrary.simpleMessage("اختر عملتك"),
+    "emailAddress": MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),
+    "emailAddressHint": MessageLookupByLibrary.simpleMessage(
+      "مثال: john.doe@example.com",
+    ),
     "enableNotifications": MessageLookupByLibrary.simpleMessage(
       "تفعيل الإشعارات الذكية",
     ),
+    "firstName": MessageLookupByLibrary.simpleMessage("الاسم الأول"),
+    "firstNameHint": MessageLookupByLibrary.simpleMessage("مثال: هاني"),
     "getStarted": MessageLookupByLibrary.simpleMessage("ابدأ الآن"),
+    "lastName": MessageLookupByLibrary.simpleMessage("الاسم الأخير"),
+    "lastNameHint": MessageLookupByLibrary.simpleMessage("مثال: مجدي"),
     "next": MessageLookupByLibrary.simpleMessage("التالي"),
     "onboardingDescription1": MessageLookupByLibrary.simpleMessage(
       "تتبّع دخلك ومصروفاتك بسهولة.",
@@ -50,6 +58,13 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "onboardingTitle4": MessageLookupByLibrary.simpleMessage(
       "تحكم الكامل بأموالك",
+    ),
+    "optional": MessageLookupByLibrary.simpleMessage("( اختياري )"),
+    "personalInfoSubtitle": MessageLookupByLibrary.simpleMessage(
+      "يرجى تقديم معلوماتك الشخصية للمتابعة.",
+    ),
+    "personalInfoTitle": MessageLookupByLibrary.simpleMessage(
+      "المعلومات الشخصية",
     ),
     "personalizeExperience": MessageLookupByLibrary.simpleMessage("خصص تجربتك"),
     "pickTheme": MessageLookupByLibrary.simpleMessage("اختر موضوعك"),

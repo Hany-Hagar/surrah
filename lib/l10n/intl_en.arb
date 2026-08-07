@@ -59,5 +59,33 @@
   "@enableNotifications": {},
 
   "protectData": "Protect your data",
-  "@protectData": {}
+  "@protectData": {},
+
+  "personalInfoTitle": "Personal Information",
+  "@personalInfoTitle": {},
+
+  "personalInfoSubtitle": "Please provide your personal information to continue.",
+  "@personalInfoSubtitle": {},
+
+  "firstName": "First Name",
+  "@firstName": {},
+
+  "firstNameHint": "Ex: John",
+  "@firstNameHint": {},
+
+  "lastName": "Last Name",
+  "@lastName": {},
+
+  "lastNameHint": "Ex: Doe",
+  "@lastNameHint": {},
+
+  "emailAddress": "Email Address",
+  "@emailAddress": {},
+
+  "emailAddressHint": "Ex: john.doe@example.com",
+  "@emailAddressHint": {},
+
+  "optional": "( Optional )",
+  "@optional": {}
+  
 }

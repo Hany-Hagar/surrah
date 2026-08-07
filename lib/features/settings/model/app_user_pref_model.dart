@@ -19,7 +19,7 @@ class AppUserPref {
       lang: "en",
       isrtl: false,
       isFirstTime: true,
-      theme: ThemeMode.dark,
+      theme: ThemeMode.light,
       notificationsEnabled: true,
     );
   }

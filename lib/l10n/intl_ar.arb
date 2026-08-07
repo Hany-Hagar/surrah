@@ -59,5 +59,33 @@
   "@enableNotifications": {},
 
   "protectData": "حماية بياناتك",
-  "@protectData": {}
+  "@protectData": {},
+
+  "personalInfoTitle": "المعلومات الشخصية",
+  "@personalInfoTitle": {},
+
+  "personalInfoSubtitle": "يرجى تقديم معلوماتك الشخصية للمتابعة.",
+  "@personalInfoSubtitle": {},
+
+  "firstName": "الاسم الأول",
+  "@firstName": {},
+
+  "firstNameHint": "مثال: هاني",
+  "@firstNameHint": {},
+
+  "lastName": "الاسم الأخير",
+  "@lastName": {},
+
+  "lastNameHint": "مثال: مجدي",
+  "@lastNameHint": {},
+
+  "emailAddress": "البريد الإلكتروني",
+  "@emailAddress": {},
+
+  "emailAddressHint": "مثال: john.doe@example.com",
+  "@emailAddressHint": {},
+
+  "optional": "( اختياري )",
+  "@optional": {}
+  
 }

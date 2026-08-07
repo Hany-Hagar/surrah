@@ -26,10 +26,18 @@ class MessageLookup extends MessageLookupByLibrary {
     "chooseCurrency": MessageLookupByLibrary.simpleMessage(
       "Choose your currency",
     ),
+    "emailAddress": MessageLookupByLibrary.simpleMessage("Email Address"),
+    "emailAddressHint": MessageLookupByLibrary.simpleMessage(
+      "Ex: john.doe@example.com",
+    ),
     "enableNotifications": MessageLookupByLibrary.simpleMessage(
       "Enable smart notifications",
     ),
+    "firstName": MessageLookupByLibrary.simpleMessage("First Name"),
+    "firstNameHint": MessageLookupByLibrary.simpleMessage("Ex: John"),
     "getStarted": MessageLookupByLibrary.simpleMessage("Get Started"),
+    "lastName": MessageLookupByLibrary.simpleMessage("Last Name"),
+    "lastNameHint": MessageLookupByLibrary.simpleMessage("Ex: Doe"),
     "next": MessageLookupByLibrary.simpleMessage("Next"),
     "onboardingDescription1": MessageLookupByLibrary.simpleMessage(
       "Monitor your income and expenses with ease.",
@@ -53,6 +61,13 @@ class MessageLookup extends MessageLookupByLibrary {
       "Reach Your Financial Goals",
     ),
     "onboardingTitle4": MessageLookupByLibrary.simpleMessage("Stay in Control"),
+    "optional": MessageLookupByLibrary.simpleMessage("( Optional )"),
+    "personalInfoSubtitle": MessageLookupByLibrary.simpleMessage(
+      "Please provide your personal information to continue.",
+    ),
+    "personalInfoTitle": MessageLookupByLibrary.simpleMessage(
+      "Personal Information",
+    ),
     "personalizeExperience": MessageLookupByLibrary.simpleMessage(
       "Personalize your experience",
     ),

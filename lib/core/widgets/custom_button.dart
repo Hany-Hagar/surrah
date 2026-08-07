@@ -80,14 +80,11 @@ class _Body extends StatelessWidget {
 
     final backgroundColor = enableBorderColor
         ? Colors.transparent
-        : (color ??
-              theme.elevatedButtonTheme.style?.backgroundColor?.resolve({}) ??
-              colors.primary);
+        : color ?? theme.colorScheme.secondary;
 
     final foregroundColor = enableBorderColor
         ? (color ?? colors.primary)
-        : (theme.elevatedButtonTheme.style?.foregroundColor?.resolve({}) ??
-              colors.onPrimary);
+        : theme.scaffoldBackgroundColor;
 
     return ElevatedButton(
       onPressed: onPressed,

@@ -1,10 +1,11 @@
-import 'setup_title.dart';
-import '../../../const/aseets.dart';
-import '../../../generated/l10n.dart';
+import '../views/setup_view.dart';
+import '../../../../const/aseets.dart';
+import '../../../../generated/l10n.dart';
 import 'package:flutter/material.dart';
-import '../../../core/utils/icon_broken.dart';
-import '../../../core/widgets/custom_text.dart';
-import '../../../core/widgets/custom_button.dart';
+import '../../../../core/utils/nav_to.dart';
+import '../../../../core/utils/icon_broken.dart';
+import '../../../../core/widgets/custom_text.dart';
+import '../../../../core/widgets/custom_button.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class WelcomeBody extends StatelessWidget {
@@ -14,16 +15,16 @@ class WelcomeBody extends StatelessWidget {
   Widget build(BuildContext context) {
     var s = S.of(context);
     return Column(
-      spacing: 20.h,
+      spacing: 10.h,
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Spacer(flex: 6),
         SizedBox(width: double.infinity),
         const _Logo(),
         Spacer(flex: 2),
-        SetupTitle(title: s.setupTitle, subtitle: s.setupSubtitle),
+        _Title(title: s.setupTitle, subtitle: s.setupSubtitle),
         Padding(
-          padding: EdgeInsets.symmetric(horizontal: 20),
+          padding: EdgeInsets.symmetric(horizontal: 16.w),
           child: _SetupData(),
         ),
         Spacer(flex: 3),
@@ -63,6 +64,40 @@ class _Logo extends StatelessWidget {
   }
 }
 
+class _Title extends StatelessWidget {
+  final String title;
+  final String subtitle;
+  const _Title({required this.title, required this.subtitle});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: MediaQuery.of(context).size.width * 0.75,
+      child: Column(
+        spacing: 5.h,
+        children: [
+          SizedBox(height: 20.h),
+          CustomText(
+            text: title,
+            size: 24.sp,
+            type: Type.overMedium,
+            textAlign: TextAlign.center,
+          ),
+          CustomText(
+            text: subtitle,
+            maxLines: 3,
+            size: 16.sp,
+            type: Type.overMedium,
+            textAlign: TextAlign.center,
+            opacity: FontOpacity.medium,
+          ),
+          SizedBox(height: 20.h),
+        ],
+      ),
+    );
+  }
+}
+
 class _SetupData extends StatelessWidget {
   const _SetupData();
 
@@ -73,7 +108,7 @@ class _SetupData extends StatelessWidget {
       spacing: 12.h,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const SizedBox(width: double.infinity),
+        SizedBox(width: double.infinity),
         _SetupTitle(icon: IconBroken.User, title: s.personalizeExperience),
         _SetupTitle(icon: IconBroken.Wallet, title: s.chooseCurrency),
         _SetupTitle(icon: IconBroken.Setting, title: s.pickTheme),
@@ -124,10 +159,12 @@ class _Button extends StatelessWidget {
       child: CustomButton(
         borderRadius: 4.r,
         text: S.of(context).getStarted,
-        onPressed: () {
-          Navigator.pushReplacementNamed(context, "/home");
-        },
+        onPressed: () => NavTo.pushReplacement(
+          context: context,
+          nextPage: const SetupView(),
+        ),
       ),
     );
   }
 }
+

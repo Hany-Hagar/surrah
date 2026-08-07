@@ -3,7 +3,7 @@ import '../../../../generated/l10n.dart';
 import '../../../../core/utils/nav_to.dart';
 import '../../models/on_boarding_model.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import '../../../setup/views/welcome_view.dart';
+import '../../../setup/pages/views/welcome_view.dart';
 import '../../../../core/utils/icon_broken.dart';
 import '../../../../core/widgets/custom_text.dart';
 import '../../../../core/widgets/custom_button.dart';
@@ -70,7 +70,8 @@ class _Skip extends StatelessWidget {
           child: CustomText(
             text: S.of(context).skip,
             size: 16.sp,
-            type: Type.medium,
+            type: Type.overMedium,
+            color: Theme.of(context).colorScheme.secondary,
           ),
         ),
       ),

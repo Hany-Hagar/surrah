@@ -228,6 +228,71 @@ class S {
       args: [],
     );
   }
+
+  /// `Personal Information`
+  String get personalInfoTitle {
+    return Intl.message(
+      'Personal Information',
+      name: 'personalInfoTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please provide your personal information to continue.`
+  String get personalInfoSubtitle {
+    return Intl.message(
+      'Please provide your personal information to continue.',
+      name: 'personalInfoSubtitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `First Name`
+  String get firstName {
+    return Intl.message('First Name', name: 'firstName', desc: '', args: []);
+  }
+
+  /// `Ex: John`
+  String get firstNameHint {
+    return Intl.message('Ex: John', name: 'firstNameHint', desc: '', args: []);
+  }
+
+  /// `Last Name`
+  String get lastName {
+    return Intl.message('Last Name', name: 'lastName', desc: '', args: []);
+  }
+
+  /// `Ex: Doe`
+  String get lastNameHint {
+    return Intl.message('Ex: Doe', name: 'lastNameHint', desc: '', args: []);
+  }
+
+  /// `Email Address`
+  String get emailAddress {
+    return Intl.message(
+      'Email Address',
+      name: 'emailAddress',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Ex: john.doe@example.com`
+  String get emailAddressHint {
+    return Intl.message(
+      'Ex: john.doe@example.com',
+      name: 'emailAddressHint',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `( Optional )`
+  String get optional {
+    return Intl.message('( Optional )', name: 'optional', desc: '', args: []);
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

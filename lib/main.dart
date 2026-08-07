@@ -10,6 +10,7 @@ import 'package:path_provider/path_provider.dart';
 import 'package:hydrated_bloc/hydrated_bloc.dart';
 import 'features/settings/model/app_user_pref_model.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'features/profile/presentation/manager/profile_cubit.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'features/settings/presentation/manager/settings_cubit.dart';
 
@@ -29,7 +30,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiBlocProvider(
-      providers: [BlocProvider(create: (context) => getIt<SettingsCubit>())],
+      providers: [
+        BlocProvider(create: (context) => getIt<SettingsCubit>()),
+        BlocProvider(create: (context) => getIt<ProfileCubit>()),
+      ],
       child: BlocBuilder<SettingsCubit, AppUserPref>(
         builder: (context, state) => ScreenUtilInit(
           designSize: const Size(390, 884),

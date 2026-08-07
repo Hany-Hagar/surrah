@@ -16,10 +16,15 @@ void setupLocator() {
   getIt.registerLazySingleton<HiveService>(() => HiveService());
 
   // Profile
-  getIt.registerLazySingleton<ProfileData>(() => ProfileData(hiveService: getIt<HiveService>()));
+  getIt.registerLazySingleton<ProfileData>(
+    () => ProfileData(hiveService: getIt<HiveService>()),
+  );
 
-  getIt.registerLazySingleton<ProfileRepo>(() => ProfileRepoImpl(profileData: getIt<ProfileData>()));
+  getIt.registerLazySingleton<ProfileRepo>(
+    () => ProfileRepoImpl(profileData: getIt<ProfileData>()),
+  );
 
-    getIt.registerLazySingleton<ProfileCubit>(() => ProfileCubit(profileRepo: getIt<ProfileRepo>()));
-
+  getIt.registerLazySingleton<ProfileCubit>(
+    () => ProfileCubit(profileRepo: getIt<ProfileRepo>()),
+  );
 }

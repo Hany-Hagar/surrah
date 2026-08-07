@@ -20,7 +20,6 @@ class _SplashViewState extends State<SplashView> {
 
     Future.delayed(const Duration(seconds: 3), () {
       if (!mounted) return;
-
       if (getIt<SettingsCubit>().state.isFirstTime) {
         NavTo.pushReplacement(
           context: context,
