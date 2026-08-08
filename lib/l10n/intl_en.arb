@@ -95,6 +95,14 @@
   "@currencySubtitle": {},
 
   "currentCurrency": "Current Currency",
-  "@currentCurrency": {}
-  
+  "@currentCurrency": {},
+
+  "themeTitle": "Choose Your Theme",
+  "@themeTitle": {},
+
+  "themeSubtitle": "Select your preferred theme for the app.",
+  "@themeSubtitle": {},
+
+  "themeCard": "The theme you select will be applied to the app interface and will affect the overall look and feel of the app.",
+  "@themeCard": {}  
 }

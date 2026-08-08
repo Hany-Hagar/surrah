@@ -323,6 +323,36 @@ class S {
       args: [],
     );
   }
+
+  /// `Choose Your Theme`
+  String get themeTitle {
+    return Intl.message(
+      'Choose Your Theme',
+      name: 'themeTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Select your preferred theme for the app.`
+  String get themeSubtitle {
+    return Intl.message(
+      'Select your preferred theme for the app.',
+      name: 'themeSubtitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The theme you select will be applied to the app interface and will affect the overall look and feel of the app.`
+  String get themeCard {
+    return Intl.message(
+      'The theme you select will be applied to the app interface and will affect the overall look and feel of the app.',
+      name: 'themeCard',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

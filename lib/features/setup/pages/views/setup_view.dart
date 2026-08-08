@@ -1,3 +1,4 @@
+import '../widgets/theme_body.dart';
 import 'package:flutter/material.dart';
 import '../widgets/currency_body.dart';
 import '../../manager/setup_cubit.dart';
@@ -20,6 +21,7 @@ class SetupView extends StatelessWidget {
             children: [
               PersonalInfoBody(),
               CurrencyBody(),
+              ThemeBody(),
             ],
           ),
         ),

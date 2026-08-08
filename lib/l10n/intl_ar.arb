@@ -95,6 +95,14 @@
   "@currencySubtitle": {},
 
   "currentCurrency": "العملة الحالية",
-  "@currentCurrency": {}
-  
+  "@currentCurrency": {},
+
+  "themeTitle": "اختر المظهر",
+  "@themeTitle": {},
+
+  "themeSubtitle": "اختر النمط المفضل لديك للتطبيق.",
+  "@themeSubtitle": {},
+
+  "themeCard": "السمة التي تختارها سيتم تطبيقها على واجهة التطبيق وستؤثر على المظهر العام للتطبيق.",
+  "@themeCard": {}  
 }

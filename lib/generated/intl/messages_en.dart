@@ -88,5 +88,12 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "setupTitle": MessageLookupByLibrary.simpleMessage("Welcome!"),
     "skip": MessageLookupByLibrary.simpleMessage("Skip"),
+    "themeCard": MessageLookupByLibrary.simpleMessage(
+      "The theme you select will be applied to the app interface and will affect the overall look and feel of the app.",
+    ),
+    "themeSubtitle": MessageLookupByLibrary.simpleMessage(
+      "Select your preferred theme for the app.",
+    ),
+    "themeTitle": MessageLookupByLibrary.simpleMessage("Choose Your Theme"),
   };
 }

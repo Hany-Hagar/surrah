@@ -51,6 +51,7 @@ class _Stepper extends StatelessWidget {
   const _Stepper();
   @override
   Widget build(BuildContext context) {
+    var theme = Theme.of(context);
     return SafeArea(
       child: EasyStepper(
         activeStep: SetupCubit.get(context).currentStep,
@@ -59,6 +60,23 @@ class _Stepper extends StatelessWidget {
         showTitle: false,
         enableStepTapping: true,
         showLoadingAnimation: false,
+
+        // Line
+        lineStyle: LineStyle(
+          lineThickness: 1.3.r,
+          activeLineColor: Colors.grey.shade400,
+          finishedLineColor: theme.colorScheme.secondary,
+        ),
+
+        // Active
+        borderThickness: 2.r,
+        activeStepIconColor: theme.colorScheme.secondary,
+        activeStepBorderColor: theme.colorScheme.secondary,
+
+        // Inactive
+        finishedStepIconColor: theme.scaffoldBackgroundColor,
+        finishedStepBackgroundColor: theme.colorScheme.secondary,
+
         steps: [
           EasyStep(
             icon: const Icon(IconBroken.Profile),

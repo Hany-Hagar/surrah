@@ -11,4 +11,8 @@ class Assets {
 
   // Setup
   static String setup1 = "assets/images/setupLogo.png";
+
+  // Theme
+  static String lightTheme = "assets/images/lightCard.png";
+  static String darkTheme = "assets/images/darkCard.png";
 }
