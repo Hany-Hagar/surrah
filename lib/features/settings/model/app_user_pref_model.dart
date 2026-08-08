@@ -1,23 +1,21 @@
+import 'language_model.dart';
 import 'package:flutter/material.dart';
 
 class AppUserPref {
-  final String lang;
-  final bool isrtl;
+  final LanguageModel lang;
   final ThemeMode theme;
   final bool isFirstTime;
   final bool notificationsEnabled;
   AppUserPref({
     required this.lang,
     required this.theme,
-    required this.isrtl,
     required this.isFirstTime,
     required this.notificationsEnabled,
   });
 
   factory AppUserPref.standard() {
     return AppUserPref(
-      lang: "en",
-      isrtl: false,
+      lang: LanguageModel.standard(),
       isFirstTime: true,
       theme: ThemeMode.light,
       notificationsEnabled: true,
@@ -26,7 +24,7 @@ class AppUserPref {
 
   AppUserPref copyWith({
     bool? isrtl,
-    String? lang,
+    LanguageModel? lang,
     ThemeMode? theme,
     bool? isFirstTime,
     bool? notificationsEnabled,
@@ -34,7 +32,6 @@ class AppUserPref {
     return AppUserPref(
       lang: lang ?? this.lang,
       theme: theme ?? this.theme,
-      isrtl: isrtl ?? this.isrtl,
       isFirstTime: isFirstTime ?? this.isFirstTime,
       notificationsEnabled: notificationsEnabled ?? this.notificationsEnabled,
     );
@@ -42,19 +39,17 @@ class AppUserPref {
 
   factory AppUserPref.fromJson(Map<String, dynamic> json) {
     return AppUserPref(
-      lang: json['lang'] as String,
-      isrtl: json['isrtl'] as bool,
       theme: ThemeMode.values[json['theme'] as int],
       isFirstTime: json['isFirstTime'] as bool? ?? true,
+      lang: LanguageModel.fromJson(json['lang'] as Map<String, dynamic>),
       notificationsEnabled: json['notificationsEnabled'] as bool? ?? true,
     );
   }
 
   Map<String, dynamic> toJson() {
     return {
-      'lang': lang,
-      'isrtl': isrtl,
       'theme': theme.index,
+      'lang': lang.toJson(),
       'isFirstTime': isFirstTime,
       'notificationsEnabled': notificationsEnabled,
     };

@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import '../../model/language_model.dart';
 import '../../model/app_user_pref_model.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hydrated_bloc/hydrated_bloc.dart';
+import '../../../../core/extensions/language_extension.dart';
+
 
 class SettingsCubit extends HydratedCubit<AppUserPref> {
   SettingsCubit() : super(AppUserPref.standard());
@@ -10,11 +13,10 @@ class SettingsCubit extends HydratedCubit<AppUserPref> {
   static SettingsCubit get(context) => BlocProvider.of<SettingsCubit>(context);
 
   // --- Functional Updates ---
-  void updateLanguage(String lang) {
-    if (lang == "ar") {
-      emit(state.copyWith(lang: lang, isrtl: true));
-    } else {
-      emit(state.copyWith(lang: lang, isrtl: false));
+  void updateLanguage(String lang, BuildContext context) {
+    var languageModel = languagesData(context).getModel(code: lang);
+    if (languageModel != null) {
+      emit(state.copyWith(lang: languageModel));
     }
   }
 

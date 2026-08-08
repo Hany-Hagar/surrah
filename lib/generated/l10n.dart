@@ -353,6 +353,81 @@ class S {
       args: [],
     );
   }
+
+  /// `Choose Your Language`
+  String get languageTitle {
+    return Intl.message(
+      'Choose Your Language',
+      name: 'languageTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Select your preferred language for the app.`
+  String get languageSubtitle {
+    return Intl.message(
+      'Select your preferred language for the app.',
+      name: 'languageSubtitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Current Language`
+  String get currentLanguage {
+    return Intl.message(
+      'Current Language',
+      name: 'currentLanguage',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Other Languages`
+  String get otherLanguages {
+    return Intl.message(
+      'Other Languages',
+      name: 'otherLanguages',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `English`
+  String get english {
+    return Intl.message('English', name: 'english', desc: '', args: []);
+  }
+
+  /// `United States`
+  String get unitedStates {
+    return Intl.message(
+      'United States',
+      name: 'unitedStates',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Arabic`
+  String get arabic {
+    return Intl.message('Arabic', name: 'arabic', desc: '', args: []);
+  }
+
+  /// `Egypt`
+  String get egypt {
+    return Intl.message('Egypt', name: 'egypt', desc: '', args: []);
+  }
+
+  /// `Complete Setup`
+  String get completeSetup {
+    return Intl.message(
+      'Complete Setup',
+      name: 'completeSetup',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

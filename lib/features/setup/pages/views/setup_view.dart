@@ -1,3 +1,4 @@
+import '../widgets/lang_body.dart';
 import '../widgets/theme_body.dart';
 import 'package:flutter/material.dart';
 import '../widgets/currency_body.dart';
@@ -22,6 +23,7 @@ class SetupView extends StatelessWidget {
               PersonalInfoBody(),
               CurrencyBody(),
               ThemeBody(),
+              LangBody(),
             ],
           ),
         ),

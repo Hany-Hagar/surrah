@@ -23,9 +23,11 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
     "appTitle": MessageLookupByLibrary.simpleMessage("Surrah"),
+    "arabic": MessageLookupByLibrary.simpleMessage("Arabic"),
     "chooseCurrency": MessageLookupByLibrary.simpleMessage(
       "Choose your currency",
     ),
+    "completeSetup": MessageLookupByLibrary.simpleMessage("Complete Setup"),
     "currencySubtitle": MessageLookupByLibrary.simpleMessage(
       "Select your preferred currency to use in the app.",
     ),
@@ -33,6 +35,8 @@ class MessageLookup extends MessageLookupByLibrary {
       "Choose Your Currency",
     ),
     "currentCurrency": MessageLookupByLibrary.simpleMessage("Current Currency"),
+    "currentLanguage": MessageLookupByLibrary.simpleMessage("Current Language"),
+    "egypt": MessageLookupByLibrary.simpleMessage("Egypt"),
     "emailAddress": MessageLookupByLibrary.simpleMessage("Email Address"),
     "emailAddressHint": MessageLookupByLibrary.simpleMessage(
       "Ex: john.doe@example.com",
@@ -40,9 +44,16 @@ class MessageLookup extends MessageLookupByLibrary {
     "enableNotifications": MessageLookupByLibrary.simpleMessage(
       "Enable smart notifications",
     ),
+    "english": MessageLookupByLibrary.simpleMessage("English"),
     "firstName": MessageLookupByLibrary.simpleMessage("First Name"),
     "firstNameHint": MessageLookupByLibrary.simpleMessage("Ex: John"),
     "getStarted": MessageLookupByLibrary.simpleMessage("Get Started"),
+    "languageSubtitle": MessageLookupByLibrary.simpleMessage(
+      "Select your preferred language for the app.",
+    ),
+    "languageTitle": MessageLookupByLibrary.simpleMessage(
+      "Choose Your Language",
+    ),
     "lastName": MessageLookupByLibrary.simpleMessage("Last Name"),
     "lastNameHint": MessageLookupByLibrary.simpleMessage("Ex: Doe"),
     "next": MessageLookupByLibrary.simpleMessage("Next"),
@@ -69,6 +80,7 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "onboardingTitle4": MessageLookupByLibrary.simpleMessage("Stay in Control"),
     "optional": MessageLookupByLibrary.simpleMessage("( Optional )"),
+    "otherLanguages": MessageLookupByLibrary.simpleMessage("Other Languages"),
     "personalInfoSubtitle": MessageLookupByLibrary.simpleMessage(
       "Please provide your personal information to continue.",
     ),
@@ -95,5 +107,6 @@ class MessageLookup extends MessageLookupByLibrary {
       "Select your preferred theme for the app.",
     ),
     "themeTitle": MessageLookupByLibrary.simpleMessage("Choose Your Theme"),
+    "unitedStates": MessageLookupByLibrary.simpleMessage("United States"),
   };
 }

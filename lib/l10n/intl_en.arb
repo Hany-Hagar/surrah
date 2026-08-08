@@ -104,5 +104,33 @@
   "@themeSubtitle": {},
 
   "themeCard": "The theme you select will be applied to the app interface and will affect the overall look and feel of the app.",
-  "@themeCard": {}  
+  "@themeCard": {},
+  
+  "languageTitle": "Choose Your Language",
+  "@languageTitle": {},
+
+  "languageSubtitle": "Select your preferred language for the app.",
+  "@languageSubtitle": {},
+
+  "currentLanguage": "Current Language",
+  "@currentLanguage": {},
+
+  "otherLanguages": "Other Languages",
+  "@otherLanguages": {},
+
+  "english": "English",
+  "@english": {},
+
+  "unitedStates": "United States",
+  "@unitedStates": {},
+
+  "arabic": "Arabic",
+  "@arabic": {},
+
+  "egypt": "Egypt",
+  "@egypt": {},
+
+  "completeSetup": "Complete Setup",
+  "@completeSetup": {}
+
 }

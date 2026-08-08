@@ -104,5 +104,32 @@
   "@themeSubtitle": {},
 
   "themeCard": "السمة التي تختارها سيتم تطبيقها على واجهة التطبيق وستؤثر على المظهر العام للتطبيق.",
-  "@themeCard": {}  
+  "@themeCard": {},
+
+  "languageTitle": "اختر لغتك",
+  "@languageTitle": {},
+
+  "languageSubtitle": "اختر لغتك المفضلة لاستخدامها في التطبيق.",
+  "@languageSubtitle": {},
+
+  "currentLanguage": "اللغة الحالية",
+  "@currentLanguage": {},
+
+  "otherLanguages": "لغات أخرى",
+  "@otherLanguages": {},
+
+  "english": "الإنجليزية",
+  "@english": {},
+
+  "unitedStates": "الولايات المتحدة",
+  "@unitedStates": {},
+
+  "arabic": "العربية",
+  "@arabic": {},
+
+  "egypt": "جمهورية مصر العربية",
+  "@egypt": {},
+
+  "completeSetup": "إكمال الإعداد",
+  "@completeSetup": {}
 }

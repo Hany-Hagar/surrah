@@ -23,12 +23,16 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
     "appTitle": MessageLookupByLibrary.simpleMessage("صُرّة"),
+    "arabic": MessageLookupByLibrary.simpleMessage("العربية"),
     "chooseCurrency": MessageLookupByLibrary.simpleMessage("اختر عملتك"),
+    "completeSetup": MessageLookupByLibrary.simpleMessage("إكمال الإعداد"),
     "currencySubtitle": MessageLookupByLibrary.simpleMessage(
       "اختر عملتك المفضلة لاستخدامها في التطبيق.",
     ),
     "currencyTitle": MessageLookupByLibrary.simpleMessage("اختر عملتك"),
     "currentCurrency": MessageLookupByLibrary.simpleMessage("العملة الحالية"),
+    "currentLanguage": MessageLookupByLibrary.simpleMessage("اللغة الحالية"),
+    "egypt": MessageLookupByLibrary.simpleMessage("جمهورية مصر العربية"),
     "emailAddress": MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),
     "emailAddressHint": MessageLookupByLibrary.simpleMessage(
       "مثال: john.doe@example.com",
@@ -36,9 +40,14 @@ class MessageLookup extends MessageLookupByLibrary {
     "enableNotifications": MessageLookupByLibrary.simpleMessage(
       "تفعيل الإشعارات الذكية",
     ),
+    "english": MessageLookupByLibrary.simpleMessage("الإنجليزية"),
     "firstName": MessageLookupByLibrary.simpleMessage("الاسم الأول"),
     "firstNameHint": MessageLookupByLibrary.simpleMessage("مثال: هاني"),
     "getStarted": MessageLookupByLibrary.simpleMessage("ابدأ الآن"),
+    "languageSubtitle": MessageLookupByLibrary.simpleMessage(
+      "اختر لغتك المفضلة لاستخدامها في التطبيق.",
+    ),
+    "languageTitle": MessageLookupByLibrary.simpleMessage("اختر لغتك"),
     "lastName": MessageLookupByLibrary.simpleMessage("الاسم الأخير"),
     "lastNameHint": MessageLookupByLibrary.simpleMessage("مثال: مجدي"),
     "next": MessageLookupByLibrary.simpleMessage("التالي"),
@@ -65,6 +74,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "تحكم الكامل بأموالك",
     ),
     "optional": MessageLookupByLibrary.simpleMessage("( اختياري )"),
+    "otherLanguages": MessageLookupByLibrary.simpleMessage("لغات أخرى"),
     "personalInfoSubtitle": MessageLookupByLibrary.simpleMessage(
       "يرجى تقديم معلوماتك الشخصية للمتابعة.",
     ),
@@ -87,5 +97,6 @@ class MessageLookup extends MessageLookupByLibrary {
       "اختر النمط المفضل لديك للتطبيق.",
     ),
     "themeTitle": MessageLookupByLibrary.simpleMessage("اختر المظهر"),
+    "unitedStates": MessageLookupByLibrary.simpleMessage("الولايات المتحدة"),
   };
 }
