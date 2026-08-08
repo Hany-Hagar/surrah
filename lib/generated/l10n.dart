@@ -293,6 +293,36 @@ class S {
   String get optional {
     return Intl.message('( Optional )', name: 'optional', desc: '', args: []);
   }
+
+  /// `Choose Your Currency`
+  String get currencyTitle {
+    return Intl.message(
+      'Choose Your Currency',
+      name: 'currencyTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Select your preferred currency to use in the app.`
+  String get currencySubtitle {
+    return Intl.message(
+      'Select your preferred currency to use in the app.',
+      name: 'currencySubtitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Current Currency`
+  String get currentCurrency {
+    return Intl.message(
+      'Current Currency',
+      name: 'currentCurrency',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

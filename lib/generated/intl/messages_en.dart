@@ -26,6 +26,13 @@ class MessageLookup extends MessageLookupByLibrary {
     "chooseCurrency": MessageLookupByLibrary.simpleMessage(
       "Choose your currency",
     ),
+    "currencySubtitle": MessageLookupByLibrary.simpleMessage(
+      "Select your preferred currency to use in the app.",
+    ),
+    "currencyTitle": MessageLookupByLibrary.simpleMessage(
+      "Choose Your Currency",
+    ),
+    "currentCurrency": MessageLookupByLibrary.simpleMessage("Current Currency"),
     "emailAddress": MessageLookupByLibrary.simpleMessage("Email Address"),
     "emailAddressHint": MessageLookupByLibrary.simpleMessage(
       "Ex: john.doe@example.com",

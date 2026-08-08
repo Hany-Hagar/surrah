@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../widgets/currency_body.dart';
 import '../../manager/setup_cubit.dart';
 import '../../manager/setup_states.dart';
 import '../widgets/personal_info_body.dart';
@@ -10,7 +11,7 @@ class SetupView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (context) => SetupCubit(),
+      create: (context) => SetupCubit()..initialize(),
       child: BlocBuilder<SetupCubit, SetupStates>(
         builder: (context, state) => Scaffold(
           body: PageView(
@@ -18,6 +19,7 @@ class SetupView extends StatelessWidget {
             controller: SetupCubit.get(context).pageController,
             children: [
               PersonalInfoBody(),
+              CurrencyBody(),
             ],
           ),
         ),

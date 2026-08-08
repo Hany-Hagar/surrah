@@ -24,6 +24,11 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
     "appTitle": MessageLookupByLibrary.simpleMessage("صُرّة"),
     "chooseCurrency": MessageLookupByLibrary.simpleMessage("اختر عملتك"),
+    "currencySubtitle": MessageLookupByLibrary.simpleMessage(
+      "اختر عملتك المفضلة لاستخدامها في التطبيق.",
+    ),
+    "currencyTitle": MessageLookupByLibrary.simpleMessage("اختر عملتك"),
+    "currentCurrency": MessageLookupByLibrary.simpleMessage("العملة الحالية"),
     "emailAddress": MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),
     "emailAddressHint": MessageLookupByLibrary.simpleMessage(
       "مثال: john.doe@example.com",

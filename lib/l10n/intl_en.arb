@@ -86,6 +86,15 @@
   "@emailAddressHint": {},
 
   "optional": "( Optional )",
-  "@optional": {}
+  "@optional": {},
+
+  "currencyTitle": "Choose Your Currency",
+  "@currencyTitle": {},
+
+  "currencySubtitle": "Select your preferred currency to use in the app.",
+  "@currencySubtitle": {},
+
+  "currentCurrency": "Current Currency",
+  "@currentCurrency": {}
   
 }
