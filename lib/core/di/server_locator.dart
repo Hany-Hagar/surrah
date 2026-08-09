@@ -1,10 +1,10 @@
 import 'package:get_it/get_it.dart';
-import '../core/services/hive_service.dart';
-import '../features/profile/data/repo/profile_repo.dart';
-import '../features/profile/data/database/profile_data.dart';
-import '../features/profile/data/repo/profile_repo_impl.dart';
-import '../features/profile/presentation/manager/profile_cubit.dart';
-import '../../features/settings/presentation/manager/settings_cubit.dart';
+import '../services/hive_service.dart';
+import '../../features/profile/data/repo/profile_repo.dart';
+import '../../features/profile/data/database/profile_data.dart';
+import '../../features/profile/data/repo/profile_repo_impl.dart';
+import '../../features/profile/presentation/manager/profile_cubit.dart';
+import '../../../features/settings/presentation/manager/settings_cubit.dart';
 
 var getIt = GetIt.instance;
 

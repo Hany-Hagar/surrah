@@ -1,6 +1,6 @@
 import 'generated/l10n.dart';
 import 'core/utils/theme.dart';
-import 'di/server_locator.dart';
+import 'core/di/server_locator.dart';
 import 'package:flutter/material.dart';
 import 'core/services/hive_service.dart';
 import 'core/utils/my_bloc_observer.dart';

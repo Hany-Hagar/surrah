@@ -1,7 +1,7 @@
 import '../../../const/aseets.dart';
 import '../widgets/splash_body.dart';
 import 'package:flutter/material.dart';
-import '../../../di/server_locator.dart';
+import '../../../core/di/server_locator.dart';
 import '../../../core/utils/nav_to.dart';
 import '../../home/pages/views/home_view.dart';
 import '../../onBoarding/pages/views/on_boarding_view.dart';

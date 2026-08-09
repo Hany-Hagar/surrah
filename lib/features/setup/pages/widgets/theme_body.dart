@@ -3,7 +3,7 @@ import '../../../../const/aseets.dart';
 import 'package:flutter/material.dart';
 import '../../manager/setup_cubit.dart';
 import '../../../../generated/l10n.dart';
-import '../../../../di/server_locator.dart';
+import '../../../../core/di/server_locator.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../core/widgets/custom_text.dart';
 import '../../../../core/widgets/custom_button.dart';

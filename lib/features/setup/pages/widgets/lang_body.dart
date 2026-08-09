@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../../const/aseets.dart';
 import '../../../../generated/l10n.dart';
 import '../../../../core/utils/nav_to.dart';
-import '../../../../di/server_locator.dart';
+import '../../../../core/di/server_locator.dart';
 import '../../../home/pages/views/home_view.dart';
 import 'package:country_flags/country_flags.dart';
 import '../../../../core/widgets/custom_text.dart';
