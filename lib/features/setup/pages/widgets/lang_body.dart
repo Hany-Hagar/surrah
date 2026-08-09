@@ -1,13 +1,15 @@
-import '../../../../const/aseets.dart';
-import '../../../../core/services/dialog_service.dart';
 import 'setup_body.dart';
 import 'package:flutter/material.dart';
+import '../../../../const/aseets.dart';
 import '../../../../generated/l10n.dart';
+import '../../../../core/utils/nav_to.dart';
 import '../../../../di/server_locator.dart';
+import '../../../home/pages/views/home_view.dart';
 import 'package:country_flags/country_flags.dart';
 import '../../../../core/widgets/custom_text.dart';
 import '../../../settings/model/language_model.dart';
 import '../../../../core/widgets/custom_button.dart';
+import '../../../../core/services/dialog_service.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../core/extensions/language_extension.dart';
 import '../../../settings/presentation/manager/settings_cubit.dart';
@@ -28,6 +30,10 @@ class LangBody extends StatelessWidget {
           text: s.completeSetup,
           borderRadius: 4.r,
           onPressed: () {
+            NavTo.pushReplacement(
+              context: context,
+              nextPage: const HomeView(),
+            );
             getIt<SettingsCubit>().updateIsFirstTime(false);
             DialogServices.showCustomDialog(
               context: context,
