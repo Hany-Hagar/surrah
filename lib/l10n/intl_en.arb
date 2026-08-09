@@ -130,6 +130,12 @@
   "egypt": "Egypt",
   "@egypt": {},
 
+  "completeDialogTitle": "Setup Completed Successfully",
+  "@completeDialogTitle": {},
+
+  "completeDialogSubtitle": "You have successfully completed the setup process. You can now start using the app and enjoy its features.",
+  "@completeDialogSubtitle": {},
+
   "completeSetup": "Complete Setup",
   "@completeSetup": {}
 

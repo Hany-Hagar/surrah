@@ -27,6 +27,12 @@ class MessageLookup extends MessageLookupByLibrary {
     "chooseCurrency": MessageLookupByLibrary.simpleMessage(
       "Choose your currency",
     ),
+    "completeDialogSubtitle": MessageLookupByLibrary.simpleMessage(
+      "You have successfully completed the setup process. You can now start using the app and enjoy its features.",
+    ),
+    "completeDialogTitle": MessageLookupByLibrary.simpleMessage(
+      "Setup Completed Successfully",
+    ),
     "completeSetup": MessageLookupByLibrary.simpleMessage("Complete Setup"),
     "currencySubtitle": MessageLookupByLibrary.simpleMessage(
       "Select your preferred currency to use in the app.",

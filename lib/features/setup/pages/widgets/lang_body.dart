@@ -1,3 +1,5 @@
+import '../../../../const/aseets.dart';
+import '../../../../core/services/dialog_service.dart';
 import 'setup_body.dart';
 import 'package:flutter/material.dart';
 import '../../../../generated/l10n.dart';
@@ -25,7 +27,14 @@ class LangBody extends StatelessWidget {
         CustomButton(
           text: s.completeSetup,
           borderRadius: 4.r,
-          onPressed: () {},
+          onPressed: () {
+            getIt<SettingsCubit>().updateIsFirstTime(false);
+            DialogServices.showCustomDialog(
+              context: context,
+              body: const _CompleteDialog(),
+              padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 12.h),
+            );
+          },
         ),
         SizedBox(height: 16.h),
       ],
@@ -35,7 +44,6 @@ class LangBody extends StatelessWidget {
 
 class _Language extends StatelessWidget {
   const _Language();
-
   @override
   Widget build(BuildContext context) {
     var s = S.of(context);
@@ -111,6 +119,41 @@ class _Item extends StatelessWidget {
     return RoundedRectangleBorder(
       borderRadius: BorderRadius.circular(4.r),
       side: BorderSide(color: Theme.of(context).colorScheme.secondary),
+    );
+  }
+}
+
+class _CompleteDialog extends StatelessWidget {
+  const _CompleteDialog();
+
+  @override
+  Widget build(BuildContext context) {
+    var width = MediaQuery.of(context).size.width;
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Image.asset(
+          Assets.completeSetup,
+          width: width * 0.33,
+          height: width * 0.35,
+        ),
+        SizedBox(height: 20.h),
+        CustomText(
+          text: "تم حفظ الإعدادات بنجاح",
+          maxLines: 2,
+          size: 16.sp,
+          type: Type.header,
+        ),
+        SizedBox(height: 10.h),
+        CustomText(
+          text: "تم حفظ الإعدادات بنجاح، يمكنك الآن استخدام التطبيق.",
+          maxLines: 2,
+          size: 14.sp,
+          type: Type.overMedium,
+          textAlign: TextAlign.center,
+        ),
+      ],
     );
   }
 }

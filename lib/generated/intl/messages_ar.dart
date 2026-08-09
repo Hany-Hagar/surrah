@@ -25,6 +25,12 @@ class MessageLookup extends MessageLookupByLibrary {
     "appTitle": MessageLookupByLibrary.simpleMessage("صُرّة"),
     "arabic": MessageLookupByLibrary.simpleMessage("العربية"),
     "chooseCurrency": MessageLookupByLibrary.simpleMessage("اختر عملتك"),
+    "completeDialogSubtitle": MessageLookupByLibrary.simpleMessage(
+      "تم حفظ الإعدادات بنجاح، يمكنك الآن استخدام التطبيق.",
+    ),
+    "completeDialogTitle": MessageLookupByLibrary.simpleMessage(
+      "تم حفظ الإعدادات بنجاح",
+    ),
     "completeSetup": MessageLookupByLibrary.simpleMessage("إكمال الإعداد"),
     "currencySubtitle": MessageLookupByLibrary.simpleMessage(
       "اختر عملتك المفضلة لاستخدامها في التطبيق.",

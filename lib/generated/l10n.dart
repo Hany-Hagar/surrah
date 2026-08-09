@@ -419,6 +419,26 @@ class S {
     return Intl.message('Egypt', name: 'egypt', desc: '', args: []);
   }
 
+  /// `Setup Completed Successfully`
+  String get completeDialogTitle {
+    return Intl.message(
+      'Setup Completed Successfully',
+      name: 'completeDialogTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `You have successfully completed the setup process. You can now start using the app and enjoy its features.`
+  String get completeDialogSubtitle {
+    return Intl.message(
+      'You have successfully completed the setup process. You can now start using the app and enjoy its features.',
+      name: 'completeDialogSubtitle',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Complete Setup`
   String get completeSetup {
     return Intl.message(

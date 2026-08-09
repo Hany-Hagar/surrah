@@ -130,6 +130,12 @@
   "egypt": "جمهورية مصر العربية",
   "@egypt": {},
 
+  "completeDialogTitle": "تم حفظ الإعدادات بنجاح",
+  "@completeDialogTitle": {},
+
+  "completeDialogSubtitle": "تم حفظ الإعدادات بنجاح، يمكنك الآن استخدام التطبيق.",
+  "@completeDialogSubtitle": {},
+
   "completeSetup": "إكمال الإعداد",
   "@completeSetup": {}
 }
