@@ -4,8 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../features/settings/presentation/manager/settings_cubit.dart';
 
-class CustomBack
- extends StatelessWidget {
+class CustomBack extends StatelessWidget {
   const CustomBack({super.key});
 
   @override
@@ -15,7 +14,7 @@ class CustomBack
     return FloatingActionButton.small(
       onPressed: () => Navigator.pop(context),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.r)),
-      child: Icon(icon, size: 24.sp),
+      child: Icon(icon, size: 28.sp),
     );
   }
 }

@@ -1,7 +1,9 @@
+
 import '../widgets/settings_body.dart';
 import 'package:flutter/material.dart';
-import '../../../../../core/widgets/custom_app_bar.dart';
 import '../../../../../core/widgets/custom_back.dart';
+import '../../../../../core/widgets/custom_app_bar.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class SettingsView extends StatelessWidget {
   const SettingsView({super.key});
@@ -10,10 +12,13 @@ class SettingsView extends StatelessWidget {
     return Scaffold(
       appBar: CustomAppBar(
         title: 'Settings',
-        leading: const CustomBackIcon(),
+        leading: const CustomBack(),
         subtitle: 'Manage your preferences',
       ),
-      body: const SettingsBody(),
+      body:  Padding(
+        padding: EdgeInsets.all(12.w),
+        child: SettingsBody(),
+      ),
     );
   }
 }
